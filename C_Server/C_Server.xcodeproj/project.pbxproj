@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C14DE7FC27D0F1C9004F3BA0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C14DE7FB27D0F1C9004F3BA0 /* main.cpp */; };
+		C1ABF26127D9BC290028C273 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1ABF26027D9BC290028C273 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C14DE7F627D0F1C9004F3BA0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C1ABF25C27D9BC290028C273 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		C14DE7F827D0F1C9004F3BA0 /* C_Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C_Server; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14DE7FB27D0F1C9004F3BA0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C1ABF25E27D9BC290028C273 /* chatClent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chatClent; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1ABF26027D9BC290028C273 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C14DE7F527D0F1C9004F3BA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1ABF25B27D9BC290028C273 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				C14DE7FA27D0F1C9004F3BA0 /* C_Server */,
+				C1ABF25F27D9BC290028C273 /* chatClent */,
 				C14DE7F927D0F1C9004F3BA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				C14DE7F827D0F1C9004F3BA0 /* C_Server */,
+				C1ABF25E27D9BC290028C273 /* chatClent */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				C14DE7FB27D0F1C9004F3BA0 /* main.cpp */,
 			);
 			path = C_Server;
+			sourceTree = "<group>";
+		};
+		C1ABF25F27D9BC290028C273 /* chatClent */ = {
+			isa = PBXGroup;
+			children = (
+				C1ABF26027D9BC290028C273 /* main.cpp */,
+			);
+			path = chatClent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = C14DE7F827D0F1C9004F3BA0 /* C_Server */;
 			productType = "com.apple.product-type.tool";
 		};
+		C1ABF25D27D9BC290028C273 /* chatClent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1ABF26427D9BC290028C273 /* Build configuration list for PBXNativeTarget "chatClent" */;
+			buildPhases = (
+				C1ABF25A27D9BC290028C273 /* Sources */,
+				C1ABF25B27D9BC290028C273 /* Frameworks */,
+				C1ABF25C27D9BC290028C273 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chatClent;
+			productName = chatClent;
+			productReference = C1ABF25E27D9BC290028C273 /* chatClent */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					C14DE7F727D0F1C9004F3BA0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					C1ABF25D27D9BC290028C273 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -110,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				C14DE7F727D0F1C9004F3BA0 /* C_Server */,
+				C1ABF25D27D9BC290028C273 /* chatClent */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C14DE7FC27D0F1C9004F3BA0 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1ABF25A27D9BC290028C273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1ABF26127D9BC290028C273 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +311,22 @@
 			};
 			name = Release;
 		};
+		C1ABF26227D9BC290028C273 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1ABF26327D9BC290028C273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -270,6 +344,15 @@
 			buildConfigurations = (
 				C14DE80027D0F1C9004F3BA0 /* Debug */,
 				C14DE80127D0F1C9004F3BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1ABF26427D9BC290028C273 /* Build configuration list for PBXNativeTarget "chatClent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1ABF26227D9BC290028C273 /* Debug */,
+				C1ABF26327D9BC290028C273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
