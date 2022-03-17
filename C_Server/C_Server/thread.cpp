@@ -27,7 +27,7 @@ void JeongSeok() {
     }
 }
 
-int main() {
+int main1() {
     trigger = 0;
     thread ta(seokHoon);
     thread na(JeongSeok);
