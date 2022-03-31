@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C14DE7FC27D0F1C9004F3BA0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C14DE7FB27D0F1C9004F3BA0 /* main.cpp */; };
+		C14F810127F56CEC00DAA167 /* thread3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C14F810027F56CEC00DAA167 /* thread3.cpp */; };
 		C19BCD5C27E30BF2003BE65B /* thread2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C19BCD5B27E30BF2003BE65B /* thread2.cpp */; };
 		C1ABF26127D9BC290028C273 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1ABF26027D9BC290028C273 /* main.cpp */; };
 		C1ABF26927D9D2AA0028C273 /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1ABF26827D9D2AA0028C273 /* thread.cpp */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		C14DE7F827D0F1C9004F3BA0 /* C_Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C_Server; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14DE7FB27D0F1C9004F3BA0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C14F810027F56CEC00DAA167 /* thread3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = thread3.cpp; sourceTree = "<group>"; };
 		C19BCD5B27E30BF2003BE65B /* thread2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = thread2.cpp; sourceTree = "<group>"; };
 		C1ABF25E27D9BC290028C273 /* chatClent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chatClent; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1ABF26027D9BC290028C273 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				C14DE7FB27D0F1C9004F3BA0 /* main.cpp */,
 				C1ABF26827D9D2AA0028C273 /* thread.cpp */,
 				C19BCD5B27E30BF2003BE65B /* thread2.cpp */,
+				C14F810027F56CEC00DAA167 /* thread3.cpp */,
 			);
 			path = C_Server;
 			sourceTree = "<group>";
@@ -141,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					C14DE7F727D0F1C9004F3BA0 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -178,6 +181,7 @@
 				C19BCD5C27E30BF2003BE65B /* thread2.cpp in Sources */,
 				C14DE7FC27D0F1C9004F3BA0 /* main.cpp in Sources */,
 				C1ABF26927D9D2AA0028C273 /* thread.cpp in Sources */,
+				C14F810127F56CEC00DAA167 /* thread3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +310,7 @@
 		C14DE80027D0F1C9004F3BA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -314,6 +319,7 @@
 		C14DE80127D0F1C9004F3BA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -322,6 +328,7 @@
 		C1ABF26227D9BC290028C273 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -330,6 +337,7 @@
 		C1ABF26327D9BC290028C273 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
